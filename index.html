@@ -37,24 +37,24 @@
             </li>
           </ul>
         </nav>
-        <div class="social">
-          <a class="social-link" href="#">
+        <div class="page-header__social">
+          <a class="page-header__social-link" href="#">
           <svg width="17" height="14" fill="#ffffff">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
           </svg>
-          <span class="social-link__alt">facebook</span>
+          <span class="hidden">facebook</span>
         </a>
-        <a class="social-link" href="#">
+        <a class="page-header__social-link" href="#">
           <svg width="8" height="19" fill="#ffffff">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
           </svg>
-          <span class="social-link__alt">instagram</span>
+          <span class="hidden">instagram</span>
         </a>
-        <a class="social-link" href="#">
+        <a class="page-header__social-link" href="#">
           <svg width="20" height="14" fill="#ffffff">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
           </svg>
-          <span class="social-link__alt">mail</span>
+          <span class="hidden">mail</span>
         </a>
         </div>
       </div>
@@ -209,6 +209,69 @@
         </ul>
         <a class="updates__link" href="#">View all posts</a>
       </section>
+
+      <section class="social">
+        <h2 class="social__title  hidden">Social networks</h2>
+        <div class="instagram">
+          <h3 class="instagram__title">Instagram</h3>
+          <div class="instagram__photos">
+            <img class="instagram__photo" src="img/instagram-photo1.jpg" alt="photo from Instagram">
+            <img class="instagram__photo" src="img/instagram-photo2.jpg" alt="photo from Instagram">
+            <img class="instagram__photo" src="img/instagram-photo3.jpg" alt="photo from Instagram">
+            <img class="instagram__photo" src="img/instagram-photo4.jpg" alt="photo from Instagram">
+          </div>
+          <a class="instagram__link" href="#">Follow us</a>
+        </div>
+
+        <div class="facebook">
+          <img src="img/logo-facebook.png" alt="facebook-logo">
+          <a class="facebook__link" href="#">
+            <img src="img/fb-screenshot.jpg" alt="screenshot">
+          </a>
+        </div>
+      </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="copyright">
+        <span class="copyright__text">&copy;2017 Surfers Co.</span>
+        <span class="copyright__text">Design by <a class="copyright__link" href="#">@lucaalco</a></span>
+      </div>
+      <nav class="secondary-nav">
+        <ul class="secondary-nav__list">
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">About</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">Boards</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">Accessories</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">Blog</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">Technology</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">Team</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">Dealers</a>
+          </li>
+          <li class="secondary-nav__item">
+            <a class="secondary-nav__link" href="#">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <form class="subscribe-form" action="#" method="post" name="subscribe-form">
+        <h3 class="subscribe-form__title">Subscribe to our newsletter</h3>
+        <label class="subscribe-form__text">
+          <input class="subscribe-form__input" type="email" name="email" value="Your email">
+        </label>
+        <input class="subscribe__submit" type="submit" name="submit-btn" value="Subscribe">
+      </form>
+    </footer>
   </body>
 </html>
