@@ -5,9 +5,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width">
-    <title>Surfers Co</title>
+    <title>Surfers Co.</title>
   </head>
   <body>
+    <svg style="display: none">
+      <symbol id="icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8.672 18.944">
+        <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+      </symbol>
+      <symbol id="icon-instagram"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 24 24">
+        <path d="M21.231 0h-18.462c-1.529 0-2.769 1.24-2.769 2.769v18.46c0 1.531 1.24 2.771 2.769 2.771h18.463c1.529 0 2.768-1.24 2.768-2.771v-18.46c0-1.529-1.239-2.769-2.769-2.769zm-9.231 7.385c2.549 0 4.616 2.065 4.616 4.615 0 2.549-2.067 4.616-4.616 4.616s-4.615-2.068-4.615-4.616c0-2.55 2.066-4.615 4.615-4.615zm9 12.693c0 .509-.413.922-.924.922h-16.152c-.511 0-.924-.413-.924-.922v-10.078h1.897c-.088.315-.153.64-.2.971-.05.337-.081.679-.081 1.029 0 4.079 3.306 7.385 7.384 7.385s7.384-3.306 7.384-7.385c0-.35-.031-.692-.081-1.028-.047-.331-.112-.656-.2-.971h1.897v10.077zm0-13.98c0 .509-.413.923-.924.923h-2.174c-.511 0-.923-.414-.923-.923v-2.175c0-.51.412-.923.923-.923h2.174c.511 0 .924.413.924.923v2.175z" fill-rule="evenodd" clip-rule="evenodd"/>
+      </symbol>
+      <symbol id="icon-mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16">
+        <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"/>
+      </symbol>
+    </svg>
+
     <header class="page-header">
       <div class="page-header__wrapper  center">
         <div class="page-header__logo">
@@ -39,19 +51,19 @@
         </nav>
         <div class="page-header__social">
           <a class="page-header__social-link" href="#">
-          <svg width="17" height="14" fill="#ffffff">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
+          <svg class="page-header__icon" width="8" height="16" fill="#ffffff">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use>
           </svg>
           <span class="hidden">facebook</span>
         </a>
         <a class="page-header__social-link" href="#">
-          <svg width="8" height="19" fill="#ffffff">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
+          <svg class="page-header__icon" width="16" height="16" fill="#ffffff">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
           </svg>
           <span class="hidden">instagram</span>
         </a>
         <a class="page-header__social-link" href="#">
-          <svg width="20" height="14" fill="#ffffff">
+          <svg class="page-header__icon" width="20" height="16" fill="#ffffff">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
           </svg>
           <span class="hidden">mail</span>
@@ -64,7 +76,7 @@
       <h1 class="page-title  hidden">Surfers Co.</h1>
 
       <div class="page-heading">
-        <h2 class="page-heading__slogan">Ride everywave as it it's youe last</h2>
+        <h2 class="page-heading__slogan">Ride everywave as it it's your last</h2>
         <p class="page-heading__text">We love the motion of the ocean</p>
       </div>
 
@@ -76,22 +88,22 @@
             <ul class="goods-item__photos">
               <li class="goods-item__photo">
                 <a class="goods-item__link" href="#">
-                  <img class="goods-item__pic" src="img/board-img1" alt="surfboard">
+                  <img class="goods-item__pic" src="img/board-img1.png" alt="surfboard">
                 </a>
               </li>
               <li class="goods-item__photo">
                 <a class="goods-item__link" href="#">
-                  <img class="goods-item__pic" src="img/board-img2" alt="surfboard">
+                  <img class="goods-item__pic" src="img/board-img2.png" alt="surfboard">
                 </a>
               </li>
               <li class="goods-item__photo">
                 <a class="goods-item__link" href="#">
-                  <img class="goods-item__pic" src="img/board-img3" alt="surfboard">
+                  <img class="goods-item__pic" src="img/board-img3.png" alt="surfboard">
                 </a>
               </li>
               <li class="goods-item__photo">
                 <a class="goods-item__link" href="#">
-                  <img class="goods-item__pic" src="img/board-img4" alt="surfboard">
+                  <img class="goods-item__pic" src="img/board-img4.png" alt="surfboard">
                 </a>
               </li>
             </ul>
@@ -128,13 +140,129 @@
                 <button class="goods-item__btn" type="button" name="button">Buy now</button>
               </div>
             </div>
-            <a class="goods-item__link" href="#">View all boards</a>
+          </article>
+          <article class="goods-item">
+            <img class="goods-item__img" src="img/board.png" alt="surfboard">
+            <ul class="goods-item__photos">
+              <li class="goods-item__photo">
+                <a class="goods-item__link" href="#">
+                  <img class="goods-item__pic" src="img/board-img1.png" alt="surfboard">
+                </a>
+              </li>
+              <li class="goods-item__photo">
+                <a class="goods-item__link" href="#">
+                  <img class="goods-item__pic" src="img/board-img2.png" alt="surfboard">
+                </a>
+              </li>
+              <li class="goods-item__photo">
+                <a class="goods-item__link" href="#">
+                  <img class="goods-item__pic" src="img/board-img3.png" alt="surfboard">
+                </a>
+              </li>
+              <li class="goods-item__photo">
+                <a class="goods-item__link" href="#">
+                  <img class="goods-item__pic" src="img/board-img4.png" alt="surfboard">
+                </a>
+              </li>
+            </ul>
+            <div class="goods-item__about">
+              <div class="goods-item__top">
+                <h3 class="goods-item__title">JR surfboards the Donny Stoker yellow.green rail fade</h3>
+                <div class="goods-item__rating">
+                  <img src="img/star-yellow.svg" width="12" height="12" alt="star">
+                  <img src="img/star-yellow.svg" width="12" height="12" alt="star">
+                  <img src="img/star-yellow.svg" width="12" height="12" alt="star">
+                  <img src="img/star-yellow.svg" width="12" height="12" alt="star">
+                  <img src="img/star-grey.svg" width="12" height="12" alt="star">
+                  <span class="goods-item__votes">(52)</span>
+                </div>
+                <div class="goods-item__count">
+                  <span id="goods__number">05</span>/<span id="goods__all">25</span>
+                </div>
+              </div>
+              <ul class="goods-item__toggles  hidden">
+                <li class="goods-item__toggle  goods-item__toggle--active" id="toggle-1">Description</li>
+                <li class="goods-item__toggle" id="toggle-2">Features</li>
+                <li class="goods-item__toggle" id="toggle-3">Dimensions</li>
+              </ul>
+              <div class="goods-item__texts">
+                <b>Description</b>
+                <p class="goods-item__text">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+                <b>Features</b>
+                <p class="goods-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <b>Dimensions</b>
+                <p class="goods-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="goods-item__buy">
+                <span class="goods-item__price">$499.99</span>
+                <button class="goods-item__btn" type="button" name="button">Buy now</button>
+              </div>
+            </div>
+          </article>
+          <article class="goods-item">
+            <img class="goods-item__img" src="img/board.png" alt="surfboard">
+            <ul class="goods-item__photos">
+              <li class="goods-item__photo">
+                <a class="goods-item__link" href="#">
+                  <img class="goods-item__pic" src="img/board-img1.png" alt="surfboard">
+                </a>
+              </li>
+              <li class="goods-item__photo">
+                <a class="goods-item__link" href="#">
+                  <img class="goods-item__pic" src="img/board-img2.png" alt="surfboard">
+                </a>
+              </li>
+              <li class="goods-item__photo">
+                <a class="goods-item__link" href="#">
+                  <img class="goods-item__pic" src="img/board-img3.png" alt="surfboard">
+                </a>
+              </li>
+              <li class="goods-item__photo">
+                <a class="goods-item__link" href="#">
+                  <img class="goods-item__pic" src="img/board-img4.png" alt="surfboard">
+                </a>
+              </li>
+            </ul>
+            <div class="goods-item__about">
+              <div class="goods-item__top">
+                <h3 class="goods-item__title">JR surfboards the Donny Stoker yellow.green rail fade</h3>
+                <div class="goods-item__rating">
+                  <img src="img/star-yellow.svg" width="12" height="12" alt="star">
+                  <img src="img/star-yellow.svg" width="12" height="12" alt="star">
+                  <img src="img/star-yellow.svg" width="12" height="12" alt="star">
+                  <img src="img/star-yellow.svg" width="12" height="12" alt="star">
+                  <img src="img/star-grey.svg" width="12" height="12" alt="star">
+                  <span class="goods-item__votes">(52)</span>
+                </div>
+                <div class="goods-item__count">
+                  <span id="goods__number">05</span>/<span id="goods__all">25</span>
+                </div>
+              </div>
+              <ul class="goods-item__toggles  hidden">
+                <li class="goods-item__toggle  goods-item__toggle--active" id="toggle-1">Description</li>
+                <li class="goods-item__toggle" id="toggle-2">Features</li>
+                <li class="goods-item__toggle" id="toggle-3">Dimensions</li>
+              </ul>
+              <div class="goods-item__texts">
+                <b>Description</b>
+                <p class="goods-item__text">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</p>
+                <b>Features</b>
+                <p class="goods-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <b>Dimensions</b>
+                <p class="goods-item__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div class="goods-item__buy">
+                <span class="goods-item__price">$499.99</span>
+                <button class="goods-item__btn" type="button" name="button">Buy now</button>
+              </div>
+            </div>
           </article>
         </div>
         <div class="goods__slider">
           <div class="goods__arrow  goods__arrow--left"></div>
           <div class="goods__arrow  goods__arrow--right"></div>
         </div>
+        <a class="goods__link" href="#">View all boards</a>
       </section>
 
       <section class="about">
@@ -270,7 +398,7 @@
         <label class="subscribe-form__text">
           <input class="subscribe-form__input" type="email" name="email" value="Your email">
         </label>
-        <input class="subscribe__submit" type="submit" name="submit-btn" value="Subscribe">
+        <input class="subscribe-form__submit" type="submit" name="submit-btn" value="Subscribe">
       </form>
     </footer>
   </body>
