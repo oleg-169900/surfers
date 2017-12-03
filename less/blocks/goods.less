@@ -1,30 +1,123 @@
 .goods {
+  position: relative;
+
   width: 1030px;
   margin: 0 auto;
   margin-top: 147px;
 
-  background-image: linear-gradient(135deg, #00d2ff 30%, #ffffff 30%);
+  font-family: @font-secondary;
 
+  background-image: linear-gradient(129.8deg, #00d2ff 33.65%, #ffffff 33.65%);
+
+  box-shadow: 0 0 30px 8px rgba(0, 0, 0, 0.34);
   overflow: hidden;
 }
 
 .goods__wrapper {
   position: relative;
   z-index: 1000;
+
   display: flex;
+
   width: 300%;
+  margin-top: -113px;
+
+  transition-duration: 1s;
 }
 
 .goods__title {
   position: relative;
+  top: 14px;
   left: 470px;
   z-index: 100;
 
-  font-family: @font-secondary;
+  font-family: @font-secondary-bold;
   text-transform: uppercase;
   color: #fafafa;
+  font-weight: bold;
   font-size: 127px;
-  letter-spacing: 8px;
+  letter-spacing: 7px;
 
   transform: rotate(270deg);
+}
+
+.goods__slider {
+  position: relative;
+  z-index: 1000;
+
+  width: 75px;
+  height: 38px;
+  margin-left: 955px;
+
+  background-color: #f2d800;
+}
+
+.goods__arrow {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 6px;
+  height: 6px;
+  margin-top: 13px;
+
+  border: 3px solid #f7f7f7;
+
+  transform: rotate(45deg);
+  cursor: pointer;
+
+  &--left {
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+  &--right {
+    margin-left: 12px;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+.goods__slider::before {
+  content: "";
+  position: relative;
+  top: 3px;
+  left: 19px;
+
+  display: inline-block;
+  width: 13px;
+  height: 2px;
+
+  background: #f7f7f7;
+}
+
+.goods__slider::after {
+  content: "";
+  position: relative;
+  top: 3px;
+  left: -19px;
+
+  display: inline-block;
+  width: 13px;
+  height: 2px;
+
+  background: #f7f7f7;
+}
+
+.goods__link {
+  position: relative;
+  z-index: 1000;
+  left: 585px;
+  top: -43px;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  font-family: @font-secondary;
+  color: @decor-color;
+  font-weight: bold;
+
+  border-bottom: 2px solid @decor-color;
+}
+
+.goods__link:hover {
+  border-color: transparent;
 }
