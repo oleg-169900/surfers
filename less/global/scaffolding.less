@@ -2,7 +2,10 @@ body {
   position: relative;
   margin: 0 auto;
   font-family: @font-primary;
-  background: #ffffff url("../img/bg-top.jpg") no-repeat top;
+  background-image: linear-gradient(to bottom, transparent 10%, #ffffff 20%),
+                    url("../img/bg-top.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 h1,
