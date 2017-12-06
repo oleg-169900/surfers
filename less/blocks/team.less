@@ -1,0 +1,46 @@
+.team {
+  margin-top: 30px;
+}
+
+.team__title {
+  text-align: center;
+  font-family: @font-secondary-bold;
+  text-transform: uppercase;
+  color: #fafafa;
+  font-weight: bold;
+  font-size: 190px;
+  letter-spacing: 12px;
+  word-spacing: 17px;
+}
+
+.team__container {
+  margin-top: -60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team__list {
+  display: flex;
+  justify-content: center;
+}
+
+.team__arrow {
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.16);
+
+  cursor: pointer;
+
+  &--left {
+    background: url("../img/team-arrow-left.png") no-repeat center;
+  }
+
+  &--right {
+    background: url("../img/team-arrow-right.png") no-repeat center;
+  }
+}

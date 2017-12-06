@@ -1,0 +1,75 @@
+.teammate {
+  position: relative;
+  margin-right: -20px;
+  z-index: 1000;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 260px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+
+  border-radius: 5px;
+
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.16);
+}
+
+.teammate:nth-child(2n + 1) {
+  z-index: 1002;
+  top: -24px;
+  margin-right: -20px;
+}
+
+.teammate:hover {
+  background-color: @decor-color;
+  cursor: pointer;
+
+  .teammate__name,
+  .teammate__email,
+  .teammate__location {
+    color: #ffffff;
+  }
+}
+
+.teammate__name,
+.teammate__email,
+.teammate__location {
+  width: 100%;
+}
+
+.teammate__img {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.teammate__name {
+  margin-top: 12px;
+
+  color: @decor-color;
+  font-size: 18px;
+  font-family: @font-secondary;
+  font-weight: bold;
+}
+
+.teammate__email {
+  margin-bottom: 15px;
+  color: #8c8c8c;
+}
+
+.teammate__location {
+  margin-top: 15px;
+  color: #8c8c8c;
+}
+
+
+.teammate:nth-child(2) {
+  .teammate__img {
+    border: none;
+  }
+}
