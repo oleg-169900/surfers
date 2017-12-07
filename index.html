@@ -325,22 +325,30 @@
         <h2 class="updates__title">Latest updates</h2>
         <ul class="updates__list">
           <li class="updates__item">
-            <img class="updates__img" src="img/upd-photo1.jpg" alt="women width surfboards">
-            <p class="updates__text">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</p>
+            <a class="updates__link" href="#">
+              <img class="updates__img" src="img/upd-photo1.jpg" alt="women width surfboards">
+              <p class="updates__text">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</p>
+            </a>
           </li>
           <li class="updates__item">
-            <img class="updates__img" src="img/upd-photo2.jpg" alt="big wave">
-            <p class="updates__text">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</p>
+            <a class="updates__link" href="#">
+              <img class="updates__img" src="img/upd-photo2.jpg" alt="big wave">
+              <p class="updates__text">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</p>
+            </a>
           </li>
           <li class="updates__item">
-            <img class="updates__img" src="img/upd-photo3.jpg" alt="beach">
-            <p class="updates__text">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</p>
+            <a class="updates__link" href="#">
+              <img class="updates__img" src="img/upd-photo3.jpg" alt="beach">
+              <p class="updates__text">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</p>
+            </a>
           </li>
         </ul>
-        <a class="updates__link" href="#">View all posts</a>
+        <button class="updates__btn" type="button" name="button">
+          <a href="#">View all posts</a>
+        </button>
       </section>
 
-      <section class="social">
+      <section class="social  center">
         <h2 class="social__title  hidden">Social networks</h2>
         <div class="instagram">
           <h3 class="instagram__title">Instagram</h3>
@@ -350,11 +358,16 @@
             <img class="instagram__photo" src="img/instagram-photo3.jpg" alt="photo from Instagram">
             <img class="instagram__photo" src="img/instagram-photo4.jpg" alt="photo from Instagram">
           </div>
-          <a class="instagram__link" href="#">Follow us</a>
+          <a class="instagram__link" href="#">
+            <svg class="instagram__icon" width="30" height="30" fill="#00b0ff">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-instagram"></use>
+            </svg>
+            Follow us
+          </a>
         </div>
 
         <div class="facebook">
-          <img src="img/logo-facebook.png" alt="facebook-logo">
+          <img class="facebook__logo" src="img/logo-facebook.png" alt="facebook-logo">
           <a class="facebook__link" href="#">
             <img src="img/fb-screenshot.jpg" alt="screenshot">
           </a>
@@ -363,45 +376,50 @@
     </main>
 
     <footer class="page-footer">
-      <div class="copyright">
-        <span class="copyright__text">&copy;2017 Surfers Co.</span>
-        <span class="copyright__text">Design by <a class="copyright__link" href="#">@lucaalco</a></span>
+      <div class="page-footer__container  center">
+        <div class="copyright">
+          <span class="copyright__text">&copy;2017 Surfers Co.</span>
+          <span class="copyright__text">Design by <a class="copyright__link" href="#">@lucaalco</a></span>
+        </div>
+        <nav class="secondary-nav">
+          <ul class="secondary-nav__list">
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">About</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Boards</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Accessories</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Blog</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Technology</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Team</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Dealers</a>
+            </li>
+            <li class="secondary-nav__item">
+              <a class="secondary-nav__link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="subscribe-form" action="#" method="post" name="subscribe-form">
+          <h3 class="subscribe-form__title">Subscribe to our newsletter</h3>
+          <label class="subscribe-form__text">
+            <svg class="subscribe-form__img" width="20" height="16" fill="#4d4d4d">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-mail"></use>
+            </svg>
+            <input class="subscribe-form__input" type="email" name="email" value="Your email">
+          </label>
+          <input class="subscribe-form__submit" type="submit" name="submit-btn" value="">
+        </form>
       </div>
-      <nav class="secondary-nav">
-        <ul class="secondary-nav__list">
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">About</a>
-          </li>
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">Boards</a>
-          </li>
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">Accessories</a>
-          </li>
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">Blog</a>
-          </li>
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">Technology</a>
-          </li>
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">Team</a>
-          </li>
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">Dealers</a>
-          </li>
-          <li class="secondary-nav__item">
-            <a class="secondary-nav__link" href="#">Contact us</a>
-          </li>
-        </ul>
-      </nav>
-      <form class="subscribe-form" action="#" method="post" name="subscribe-form">
-        <h3 class="subscribe-form__title">Subscribe to our newsletter</h3>
-        <label class="subscribe-form__text">
-          <input class="subscribe-form__input" type="email" name="email" value="Your email">
-        </label>
-        <input class="subscribe-form__submit" type="submit" name="submit-btn" value="Subscribe">
-      </form>
     </footer>
 
     <script src="js/goods-text-toggle.js"></script>
